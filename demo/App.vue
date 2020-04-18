@@ -154,7 +154,7 @@
                                 title: 'Page'
                             },
                             {
-                                title: 'Ped Another Level 2',
+                                title: 'Another Level 2 With Input Box',
                                 searchBox: true,
                                 child: [
                                     {

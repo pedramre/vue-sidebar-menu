@@ -80,7 +80,6 @@
                 :key="index"
                 :item="item"
                 :level="2"
-                :search-box="item.searchBox"
                 :show-child="showChild"
                 :rtl="rtl"
                 :is-collapsed="isCollapsed"

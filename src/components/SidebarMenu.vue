@@ -6,6 +6,7 @@
     @mouseleave="onMouseLeave"
   >
     <slot name="header" />
+
     <div
       class="vsm--scroll-wrapper"
       :style="isCollapsed && [rtl ? {'margin-left': '-17px'} : {'margin-right': '-17px'}]"
@@ -73,11 +74,13 @@
               v-if="mobileItem && mobileItem.child"
               class="vsm--list"
             >
+                <slot v-if="mobileItem.searchBox === true" name="search" />
               <sidebar-menu-item
                 v-for="(item, index) in mobileItem.child"
                 :key="index"
                 :item="item"
                 :level="2"
+                :search-box="item.searchBox"
                 :show-child="showChild"
                 :rtl="rtl"
                 :is-collapsed="isCollapsed"
@@ -86,6 +89,7 @@
                   slot="dropdown-icon"
                   name="dropdown-icon"
                 />
+
               </sidebar-menu-item>
             </div>
           </transition>

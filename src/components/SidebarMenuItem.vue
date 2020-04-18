@@ -19,7 +19,14 @@
     v-on="disableHover && isCollapsed ? { click: mouseEnterEvent } : { mouseover: mouseEnterEvent }"
     @mouseout="mouseLeaveEvent"
   >
-    <sidebar-menu-link
+
+      <!--<div v-if="searchBox">-->
+          <!--<input placeholder="جستجو" style="direction: rtl"-->
+          <!--type="text"/>-->
+      <!--</div>-->
+      <slot name="search" />
+
+      <sidebar-menu-link
       :tag="item.disabled || !itemLinkHref ? 'span' : (isRouterLink ? 'router-link' : 'a')"
       :href="itemLinkHref"
       :disabled="item.disabled"
@@ -135,7 +142,11 @@ export default {
     disableHover: {
       type: Boolean,
       default: false
-    }
+    },
+      searchBox: {
+      type: Boolean,
+      default: false
+    },
   }
 }
 </script>

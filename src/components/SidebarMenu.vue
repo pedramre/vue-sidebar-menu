@@ -28,6 +28,8 @@
           slot="dropdown-icon"
           name="dropdown-icon"
         />
+
+          <slot slot="search" name="search" />
       </sidebar-menu-item>
     </div>
     <div
@@ -49,6 +51,7 @@
           slot="dropdown-icon"
           name="dropdown-icon"
         />
+          <slot slot="search" name="search" />
       </sidebar-menu-item>
       <transition name="slide-animation">
         <div
@@ -71,7 +74,6 @@
             v-if="mobileItem && mobileItem.child"
             class="vsm--list"
           >
-            <slot v-if="mobileItem.searchBox === true" name="search" />
             <sidebar-menu-item
               v-for="(item, index) in mobileItem.child"
               :key="index"
@@ -85,6 +87,7 @@
                 slot="dropdown-icon"
                 name="dropdown-icon"
               />
+                <slot slot="search" name="search" />
             </sidebar-menu-item>
           </div>
         </transition>

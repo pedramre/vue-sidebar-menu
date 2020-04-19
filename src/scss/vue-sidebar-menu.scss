@@ -62,6 +62,9 @@
         text-align: center;
         border-radius: 3px;
       }
+      .vsm--search{
+        visibility: hidden !important;
+      }
     }
     &:after {
       content: '';
@@ -72,7 +75,7 @@
       background-color: transparent;
       &.vsm--link_hover,
       &:hover {
-        background-color: transparent !important;
+        background-color: transparent !important
       }
     }
   }
@@ -162,6 +165,7 @@
         margin-right: 0px;
       }
     }
+
   }
 
   &.vsm_rtl {

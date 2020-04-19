@@ -32,7 +32,7 @@
             </div>
             <sidebar-menu
                     :menu="menu"
-                    :collapsed="collapsed"
+                    :collapsed="true"
                     :theme="selectedTheme"
                     :show-one-child="true"
                     @toggle-collapse="onToggleCollapse"
@@ -121,6 +121,7 @@
                         href: '/page',
                         title: 'Dropdown Page',
                         icon: 'fa fa-list-ul',
+                        searchBox:true,
                         child: [
                             {
                                 href: '/page/sub-page-1',

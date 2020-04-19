@@ -12,6 +12,7 @@
   >
     {{ item.title }}
   </div>
+
   <div
     v-else-if="!isItemHidden"
     class="vsm--item"
@@ -46,9 +47,16 @@
           <slot name="dropdown-icon" />
         </div>
       </template>
+      <div v-if="item.searchBox === true && isCollapsed" class="vsm--search">
+        <slot name="search" />
+      </div>
+
+
     </sidebar-menu-link>
     <template v-if="item.child">
+
       <template v-if="(isCollapsed && !isFirstLevel) || !isCollapsed">
+
         <transition
           name="expand"
           @enter="expandEnter"

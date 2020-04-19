@@ -35,9 +35,9 @@
                     :collapsed="true"
                     :theme="selectedTheme"
                     :show-one-child="true"
+                    :rtl="true"
                     @toggle-collapse="onToggleCollapse"
-                    @item-click="onItemClick"
-            >
+                    @item-click="onItemClick">
 
                 <span slot="search">
                     <input placeholder="search everything here"

@@ -35,7 +35,7 @@
                     :collapsed="true"
                     :theme="selectedTheme"
                     :show-one-child="true"
-                    :rtl="true"
+                    :rtl="false"
                     @toggle-collapse="onToggleCollapse"
                     @item-click="onItemClick">
 
@@ -185,6 +185,10 @@
                     {
                         name: 'White theme',
                         input: 'white-theme'
+                    },
+                    {
+                        name: 'Vira theme',
+                        input: 'vira-theme'
                     }
                 ],
                 selectedTheme: 'white-theme'

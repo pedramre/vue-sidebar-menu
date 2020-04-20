@@ -1,5 +1,5 @@
 $base-bg: #000;
-$primary-color: rgba(45, 66, 96, 1);
+$primary-color: rgba(45, 66, 96, .7);
 $mobile-item-bg:$primary-color;
 $icon-open-bg:$primary-color;
 $item-open-bg:$primary-color;
@@ -9,10 +9,10 @@ $icon-color: $item-color;
 $icon-bg: #bbc5d6;
 $icon-active-bg: $item-color;
 $item-hover-color: $item-color;
-$item-hover-bg: rgba(45, 66, 96, 0.7);
+$item-hover-bg: rgba(45, 66, 96, 0.5);
 $item-active-color: $item-color;
 $dropdown-color: $item-color;
-$dropdown-bg: #e3e3e3;
+$dropdown-bg:rgba(0,0,0,.7);
 
 .v-sidebar-menu.vsm_vira-theme {
   background-color: $base-bg;

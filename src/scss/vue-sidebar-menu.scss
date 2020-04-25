@@ -63,7 +63,7 @@
         border-radius: 3px;
       }
       .vsm--search{
-        visibility: hidden !important;
+        display: none;
       }
     }
     &:after {
@@ -78,6 +78,17 @@
         background-color: transparent !important
       }
     }
+  }
+
+  .vsm--item:hover > .vsm--link_level-1{
+    height: 80px;
+  }
+
+  .vsm--search{
+    position: relative !important;
+    display: inline-block;
+    top: 50%;
+    background-color: red;
   }
 
   .vsm--title {

@@ -294,4 +294,9 @@
         line-height: 1.5;
         overflow: auto;
     }
+
+    .vsm--item:hover > .vsm--link_level-1{
+        height: 80px;
+    }
+
 </style>

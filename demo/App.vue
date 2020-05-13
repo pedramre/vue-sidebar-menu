@@ -156,7 +156,19 @@
                             {
                                 href: '/page/sub-page-1',
                                 title: 'Sub Page 01',
-                                icon: 'fa fa-file-alt'
+                                icon: 'fa fa-file-alt',
+                                child:[
+                                    {
+                                        href: '/page/sub-page-3',
+                                        title: 'Sub Page 03',
+                                        icon: 'fa fa-file-alt'
+                                    }
+                                    ,{
+                                        href: '/page/sub-page-4',
+                                        title: 'Sub Page 04',
+                                        icon: 'fa fa-file-alt'
+                                    }
+                                ]
                             },
                             {
                                 href: '/page/sub-page-2',

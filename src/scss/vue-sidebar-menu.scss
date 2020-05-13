@@ -88,7 +88,6 @@
     position: relative !important;
     display: inline-block;
     top: 50%;
-    background-color: red;
   }
 
   .vsm--title {
@@ -117,7 +116,7 @@
       font-family: 'Font Awesome 5 Free';
     }
     &_open {
-      transform: translateY(-50%) rotate(90deg);
+      transform: translateY(0%) rotate(90deg);
     }
     &_slot:after {
       display: none;
@@ -133,7 +132,7 @@
   }
 
   .vsm--badge {
-    position: absolute;
+    position: relative;
     right: 10px;
     top: 50%;
     transform: translateY(-50%);

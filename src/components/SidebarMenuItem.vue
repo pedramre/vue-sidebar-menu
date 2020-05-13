@@ -34,9 +34,9 @@
       />
       <template v-if="(isCollapsed && !isFirstLevel) || !isCollapsed || isMobileItem">
         <sidebar-menu-badge
-          v-if="item.badge"
-          :badge="item.badge"
-          :style="[rtl ? (item.child ? {'margin-left' : '30px'} : '') : (item.child ? {'margin-right' : '30px'} : '')]"
+                v-for="(badge,index) in item.badges"
+          :badge="badge"
+          :style="[rtl ? ({'margin-left' : '5px','float':'left','top':'20px'}) : ({'margin-right' : '5px','float':'right','top':'20px'})]"
         />
         <span class="vsm--title">{{ item.title }}</span>
         <div

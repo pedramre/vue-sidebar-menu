@@ -35,13 +35,13 @@
                     :collapsed="true"
                     :theme="selectedTheme"
                     :show-one-child="true"
-                    :rtl="false"
+                    :rtl="true"
                     @toggle-collapse="onToggleCollapse"
                     @item-click="onItemClick">
 
                 <span slot="search">
                     <input placeholder="search everything here"
-                       type="text" v-on:input="searchFunc($event)"/>
+                           type="text" v-on:input="searchFunc($event)"/>
                 </span>
 
 
@@ -112,16 +112,46 @@
                     {
                         title: 'Badge',
                         icon: 'fa fa-cog',
-                        badge: {
-                            text: 'new',
-                            class: 'vsm--badge_default'
-                        }
+                        // badge: {
+                        //     text: 'new',
+                        //     class: 'vsm--badge_default'
+                        // },
+                        badges: [
+                            {
+                                text: 'new',
+                                class: 'vsm--badge_default'
+                            },
+                            {
+                                text: 'Olllllld',
+                                class: 'vsm--badge_default',
+                            },
+                            {
+                                text: 'Olld',
+                                class: 'vsm--badge_default',
+
+                            }
+                        ]
                     },
                     {
                         href: '/page',
                         title: 'Dropdown Page',
                         icon: 'fa fa-list-ul',
-                        searchBox:true,
+                        searchBox: true,
+                        badges: [
+                            {
+                                text: 'new',
+                                class: 'vsm--badge_default'
+                            },
+                            {
+                                text: 'Olllllld',
+                                class: 'vsm--badge_default',
+                            },
+                            {
+                                text: 'Olld',
+                                class: 'vsm--badge_default',
+
+                            }
+                        ],
                         child: [
                             {
                                 href: '/page/sub-page-1',
@@ -138,7 +168,7 @@
                     {
                         title: 'Multiple Level',
                         icon: 'fa fa-list-alt',
-                        searchBox:true,
+                        searchBox: true,
                         child: [
                             {
                                 title: 'page'
@@ -195,8 +225,8 @@
             }
         },
         methods: {
-            searchFunc:function (event) {
-              console.log('on SearchFunc')
+            searchFunc: function (event) {
+                console.log('on SearchFunc')
             },
             onToggleCollapse(collapsed) {
                 console.log(collapsed)

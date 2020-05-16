@@ -137,6 +137,9 @@
                         title: 'Dropdown Page',
                         icon: 'fa fa-list-ul',
                         searchBox: true,
+                        attributes:{
+                            id:'groupItems'
+                        },
                         badges: [
                             {
                                 text: 'new',
@@ -295,8 +298,12 @@
         overflow: auto;
     }
 
-    .vsm--item:hover > .vsm--link_level-1{
+    /*.vsm--item:hover > .vsm--link_level-1{*/
+        /*height: 80px;*/
+    /*}*/
+    #groupItems:hover{
         height: 80px;
     }
+
 
 </style>

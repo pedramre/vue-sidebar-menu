@@ -81,14 +81,14 @@
   }
 
   .vsm--search{
-    position: relative !important;
     display: inline-block;
     top: 50%;
+    right: 10px;
     //background-color: red;
   }
 
   .vsm--title {
-    display: block;
+    //display: block;
     white-space: nowrap;
   }
 
@@ -103,10 +103,9 @@
     text-align: center;
     font-style: normal;
     font-weight: 900;
-    position: absolute;
-    right: 10px;
+    left: 10px;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(0%);
     float: left;
     transition: 0.3s transform;
     &:after {
@@ -115,6 +114,7 @@
     }
     &_open {
       transform: translateY(0%) rotate(90deg);
+      float: left !important;
     }
     &_slot:after {
       display: none;
